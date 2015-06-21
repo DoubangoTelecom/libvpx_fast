@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libvpx">
+      <UniqueIdentifier>{6C6E7BE2-F80A-3FB0-052D-F4ABBA92412E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libvpx\build">
+      <UniqueIdentifier>{D5519164-BF26-36DA-740B-76CEFC1827F4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libvpx\build\make">
+      <UniqueIdentifier>{AFD4F50A-DD55-3279-EEF3-E3E51699A718}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\libvpx\build\make\obj_int_extract.c">
+      <Filter>source\libvpx\build\make</Filter>
+    </ClCompile>
+    <None Include="libvpx.gyp"/>
+  </ItemGroup>
+</Project>

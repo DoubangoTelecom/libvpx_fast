@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{8A6F5E6E-316F-22D4-1547-253B04CB32E7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libvpx">
+      <UniqueIdentifier>{6C6E7BE2-F80A-3FB0-052D-F4ABBA92412E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source\libvpx\vpx_scale">
+      <UniqueIdentifier>{19FD85B8-37A3-5A8F-63A5-16365A928A9A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\libvpx\vpx_scale\vpx_scale_asm_offsets.c">
+      <Filter>source\libvpx\vpx_scale</Filter>
+    </ClCompile>
+    <None Include="libvpx.gyp"/>
+  </ItemGroup>
+</Project>
