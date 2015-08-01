@@ -7,3 +7,8 @@
 *.user
 *.suo
 *.ncb
+/libvpx_2013.sdf
+/libvpx_2013.opensdf
+/Win32
+/test_fast/Debug
+/test_fast/My Amplifier XE Results - test_fast

@@ -24,7 +24,7 @@
 	<Configurations>
 		<Configuration
 			Name="Debug|GE vPC WEC7 SDK (x86)"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
 			ConfigurationType="4"
 			CharacterSet="1"
@@ -107,7 +107,7 @@
 		</Configuration>
 		<Configuration
 			Name="Debug|Win32"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
 			CharacterSet="1"
@@ -178,7 +178,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|GE vPC WEC7 SDK (x86)"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(PlatformName)\$(ConfigurationName)"
 			IntermediateDirectory="$(PlatformName)\$(ConfigurationName)"
 			ConfigurationType="4"
 			CharacterSet="1"
@@ -261,7 +261,7 @@
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
-			OutputDirectory="$(SolutionDir)$(PlatformName)\$(ConfigurationName)"
+			OutputDirectory="$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
 			CharacterSet="1"
@@ -348,15 +348,6 @@
 					<File
 						RelativePath=".\source\libvpx\third_party\x86inc\x86inc.asm"
 						>
-						<FileConfiguration
-							Name="Debug|Win32"
-							>
-							<Tool
-								Name="YASM"
-								CommandLine="yasm.exe &quot;-D&quot; &quot;CHROMIUM&quot; &quot;-I&quot; &quot;source\config\win\ia32&quot; &quot;-I&quot; &quot;source\config&quot; &quot;-I&quot; &quot;source\libvpx&quot; &quot;-I&quot; &quot;..\..\build\Debug\obj\global_intermediate\third_party\libvpx&quot; &quot;-DPREFIX&quot; &quot;-fwin32&quot; &quot;-m&quot; &quot;x86&quot; &quot;-o&quot; &quot;$(OutDir)\$(InputName).obj&quot; [Inputs]"
-								AdditionalOptions=""
-							/>
-						</FileConfiguration>
 					</File>
 				</Filter>
 			</Filter>

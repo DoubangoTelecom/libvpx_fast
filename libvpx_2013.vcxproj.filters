@@ -1,0 +1,751 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\third_party">
+      <UniqueIdentifier>{8ed3f8bf-4f78-44ae-8f38-f28203896c2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8">
+      <UniqueIdentifier>{15ac704a-cbc5-4be8-ba65-a86f1848f229}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx">
+      <UniqueIdentifier>{545c7da4-b599-41fd-9479-3ea458fcf8de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx_mem">
+      <UniqueIdentifier>{6e839a6c-c385-4099-bd48-1a6f54726463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx_ports">
+      <UniqueIdentifier>{2bbd8b01-1c70-4c4f-9f1c-978c54207f5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx_scale">
+      <UniqueIdentifier>{f90f939c-1db7-4921-a792-dc3e19aa51f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\third_party\x86inc">
+      <UniqueIdentifier>{fda36c19-dc04-4ff7-a014-46ce922b7a3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\common">
+      <UniqueIdentifier>{2160ec2a-17ee-4d66-8916-b018d4748dbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\common\generic">
+      <UniqueIdentifier>{3bde81f9-00cc-411e-a6e8-c983553015b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\common\x86">
+      <UniqueIdentifier>{4c737664-5896-476d-9eda-792436204ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\decoder">
+      <UniqueIdentifier>{9a532c5b-f91a-49e9-ab4c-db47711ad2e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\encoder">
+      <UniqueIdentifier>{6d0c2f92-12d4-43b4-bcd1-2e5162f42192}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\encoder\x86">
+      <UniqueIdentifier>{6b4561bc-a3b4-4fe9-9636-9810173ca4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\decoder\generic">
+      <UniqueIdentifier>{f516fb77-3448-4c97-818e-16de799e16ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vp8\decoder\x86">
+      <UniqueIdentifier>{9ca1ef5e-e231-4fb4-b58c-e75a1e8dbadc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx\internal">
+      <UniqueIdentifier>{595337b5-e22c-432f-b524-367002173854}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx\src">
+      <UniqueIdentifier>{e226d389-5432-426d-866b-289b8ed2c392}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx_mem\include">
+      <UniqueIdentifier>{9fded9e3-5aba-4d95-9871-24c541295c11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\vpx_scale\generic">
+      <UniqueIdentifier>{71962984-6576-4f25-a840-e63f10fceb3a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="source\libvpx\vpx\vpx_codec.mk">
+      <Filter>Source Files\vpx</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\libvpx\vp8\common\alloccommon.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\blockd.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\context.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\debugmodes.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\dequantize.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\entropy.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\entropymode.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\entropymv.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\extend.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\filter.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\findnearmv.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\idct_blk.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\idctllm.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\loopfilter.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\loopfilter_filters.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\mbpitch.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\mfqe.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\modecont.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\postproc.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\quant_common.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\reconinter.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\reconintra.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\reconintra4x4.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\rtcd.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\sad_c.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\setupintrarecon.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\swapyv12buffer.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\textblit.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\treecoder.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\variance_c.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\filter_x86.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\idct_blk_mmx.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\idct_blk_sse2.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\loopfilter_x86.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\postproc_x86.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\recon_wrapper_sse2.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\variance_mmx.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\variance_sse2.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\variance_ssse3.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\x86\vp8_asm_stubs.c">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\generic\systemdependent.c">
+      <Filter>Source Files\vp8\common\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\decoder\dboolhuff.c">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\decoder\decodeframe.c">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\decoder\decodemv.c">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\decoder\detokenize.c">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\decoder\onyxd_if.c">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\decoder\threading.c">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\bitstream.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\boolhuff.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\dct.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\denoising.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\encodeframe.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\encodeintra.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\encodemb.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\encodemv.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\ethreading.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\firstpass.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\lookahead.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\mcomp.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\modecosts.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\mr_dissim.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\onyx_if.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\pickinter.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\picklpf.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\quantize.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\ratectrl.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\rdopt.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\segmentation.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\ssim.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\temporal_filter.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\tokenize.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\treewriter.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\vp8_asm_enc_offsets.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\denoising_sse2.c">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\quantize_sse2.c">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\vp8_enc_stubs_mmx.c">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\vp8_enc_stubs_sse2.c">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx\src\svc_encodeframe.c">
+      <Filter>Source Files\vpx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx\src\vpx_codec.c">
+      <Filter>Source Files\vpx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx\src\vpx_decoder.c">
+      <Filter>Source Files\vpx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx\src\vpx_encoder.c">
+      <Filter>Source Files\vpx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx\src\vpx_image.c">
+      <Filter>Source Files\vpx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx\src\vpx_psnr.c">
+      <Filter>Source Files\vpx\src</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_mem\vpx_mem.c">
+      <Filter>Source Files\vpx_mem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_mem\vpx_mem_tracker.c">
+      <Filter>Source Files\vpx_mem</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_scale\vpx_scale_asm_offsets.c">
+      <Filter>Source Files\vpx_scale</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_scale\vpx_scale_rtcd.c">
+      <Filter>Source Files\vpx_scale</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_scale\generic\gen_scalers.c">
+      <Filter>Source Files\vpx_scale\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_scale\generic\vpx_scale.c">
+      <Filter>Source Files\vpx_scale\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_scale\generic\yv12config.c">
+      <Filter>Source Files\vpx_scale\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_scale\generic\yv12extend.c">
+      <Filter>Source Files\vpx_scale\generic</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vpx_ports\arm_cpudetect.c">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\vp8_cx_iface.c">
+      <Filter>Source Files\vp8</Filter>
+    </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\vp8_dx_iface.c">
+      <Filter>Source Files\vp8</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\libvpx\vp8\common\alloccommon.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\blockd.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\coefupdateprobs.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\common.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\default_coef_probs.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\entropy.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\entropymode.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\entropymv.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\extend.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\filter.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\findnearmv.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\header.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\invtrans.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\loopfilter.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\modecont.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\mv.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\onyx.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\onyxc_int.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\onyxd.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\postproc.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\ppflags.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\pragmas.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\quant_common.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\reconinter.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\reconintra4x4.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\setupintrarecon.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\swapyv12buffer.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\systemdependent.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\threading.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\treecoder.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\variance.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\vp8_entropymodedata.h">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\common\x86\filter_x86.h">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\dboolhuff.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\decodemv.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\decoderthreading.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\detokenize.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\ec_types.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\onyxd_int.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\decoder\treereader.h">
+      <Filter>Source Files\vp8\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\bitstream.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\block.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\boolhuff.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\dct_value_cost.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\dct_value_tokens.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\defaultcoefcounts.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\denoising.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\encodeframe.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\encodeintra.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\encodemb.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\encodemv.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\firstpass.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\lookahead.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\mcomp.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\modecosts.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\mr_dissim.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\onyx_int.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\pickinter.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\quantize.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\ratectrl.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\rdopt.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\segmentation.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\tokenize.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vp8\encoder\treewriter.h">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\svc_context.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vp8.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vp8cx.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vp8dx.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vpx_codec.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vpx_decoder.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vpx_encoder.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vpx_frame_buffer.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vpx_image.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\vpx_integer.h">
+      <Filter>Source Files\vpx</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\internal\vpx_codec_internal.h">
+      <Filter>Source Files\vpx\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx\internal\vpx_psnr.h">
+      <Filter>Source Files\vpx\internal</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_mem\include\vpx_mem_intrnl.h">
+      <Filter>Source Files\vpx_mem\include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_mem\include\vpx_mem_tracker.h">
+      <Filter>Source Files\vpx_mem\include</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_mem\vpx_mem.h">
+      <Filter>Source Files\vpx_mem</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_scale\vpx_scale.h">
+      <Filter>Source Files\vpx_scale</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_scale\yv12config.h">
+      <Filter>Source Files\vpx_scale</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\arm.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\asm_offsets.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\config.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\emmintrin_compat.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\mem.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\mem_ops.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\mem_ops_aligned.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\vpx_once.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\vpx_timer.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+    <ClInclude Include="source\libvpx\vpx_ports\x86.h">
+      <Filter>Source Files\vpx_ports</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="source\libvpx\vp8\encoder\x86\dct_mmx.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\third_party\x86inc\x86inc.asm">
+      <Filter>Source Files\third_party\x86inc</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\dequantize_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\idctllm_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\idctllm_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\iwalsh_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\iwalsh_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\loopfilter_block_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\loopfilter_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\loopfilter_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\mfqe_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\postproc_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\postproc_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\recon_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\recon_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_sse3.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_sse4.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_ssse3.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\subpixel_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\subpixel_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\subpixel_ssse3.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\variance_impl_mmx.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\variance_impl_sse2.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\variance_impl_ssse3.asm">
+      <Filter>Source Files\vp8\common\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\dct_sse2.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\encodeopt.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\fwalsh_sse2.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\quantize_mmx.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\quantize_sse4.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\quantize_ssse3.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\subtract_mmx.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\subtract_sse2.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\temporal_filter_apply_sse2.asm">
+      <Filter>Source Files\vp8\encoder\x86</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vpx_ports\x86_abi_support.asm">
+      <Filter>Source Files\vpx_ports</Filter>
+    </YASM>
+    <YASM Include="source\libvpx\vpx_ports\emms.asm">
+      <Filter>Source Files\vpx_ports</Filter>
+    </YASM>
+  </ItemGroup>
+</Project>

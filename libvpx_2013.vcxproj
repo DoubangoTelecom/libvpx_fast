@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <YASM Include="source\libvpx\vp8\common\x86\dequantize_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\idctllm_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\idctllm_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\iwalsh_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\iwalsh_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\loopfilter_block_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\loopfilter_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\loopfilter_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\mfqe_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\postproc_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\postproc_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\recon_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\recon_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_sse3.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_sse4.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\sad_ssse3.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\subpixel_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\subpixel_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\subpixel_ssse3.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\variance_impl_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\variance_impl_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\common\x86\variance_impl_ssse3.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\dct_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">yasm.exe "-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" "-I" "..\..\build\Debug\obj\global_intermediate\third_party\libvpx" "-DPREFIX" "-fwin32" "-m" "x86" "-o" "$(OutDir)\$(InputName).obj" [Inputs]</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)\$(InputName).obj</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\dct_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\encodeopt.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\fwalsh_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\quantize_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\quantize_sse4.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\quantize_ssse3.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\subtract_mmx.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\subtract_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vp8\encoder\x86\temporal_filter_apply_sse2.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <None Include="source\libvpx\vpx\vpx_codec.mk" />
+    <YASM Include="source\libvpx\vpx_ports\emms.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\vpx_ports\x86_abi_support.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+    <YASM Include="source\libvpx\third_party\x86inc\x86inc.asm">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">yasm.exe "-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" "-I" "..\..\build\Debug\obj\global_intermediate\third_party\libvpx" "-DPREFIX" "-fwin32" "-m" "x86" "-o" "$(OutDir)\$(InputName).obj" [Inputs]</Command>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</ExcludedFromBuild>
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(IncludePaths)</IncludePaths>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"-D" "CHROMIUM" "-I" "source\config\win\ia32" "-I" "source\config" "-I" "source\libvpx" %(AdditionalOptions)</AdditionalOptions>
+    </YASM>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\libvpx\vp8\common\alloccommon.c" />
+    <ClCompile Include="source\libvpx\vp8\common\blockd.c" />
+    <ClCompile Include="source\libvpx\vp8\common\context.c" />
+    <ClCompile Include="source\libvpx\vp8\common\debugmodes.c" />
+    <ClCompile Include="source\libvpx\vp8\common\dequantize.c" />
+    <ClCompile Include="source\libvpx\vp8\common\entropy.c" />
+    <ClCompile Include="source\libvpx\vp8\common\entropymode.c" />
+    <ClCompile Include="source\libvpx\vp8\common\entropymv.c" />
+    <ClCompile Include="source\libvpx\vp8\common\extend.c" />
+    <ClCompile Include="source\libvpx\vp8\common\filter.c" />
+    <ClCompile Include="source\libvpx\vp8\common\findnearmv.c" />
+    <ClCompile Include="source\libvpx\vp8\common\generic\systemdependent.c" />
+    <ClCompile Include="source\libvpx\vp8\common\idctllm.c" />
+    <ClCompile Include="source\libvpx\vp8\common\idct_blk.c" />
+    <ClCompile Include="source\libvpx\vp8\common\loopfilter.c" />
+    <ClCompile Include="source\libvpx\vp8\common\loopfilter_filters.c" />
+    <ClCompile Include="source\libvpx\vp8\common\mbpitch.c" />
+    <ClCompile Include="source\libvpx\vp8\common\mfqe.c" />
+    <ClCompile Include="source\libvpx\vp8\common\modecont.c" />
+    <ClCompile Include="source\libvpx\vp8\common\postproc.c" />
+    <ClCompile Include="source\libvpx\vp8\common\quant_common.c" />
+    <ClCompile Include="source\libvpx\vp8\common\reconinter.c" />
+    <ClCompile Include="source\libvpx\vp8\common\reconintra.c" />
+    <ClCompile Include="source\libvpx\vp8\common\reconintra4x4.c" />
+    <ClCompile Include="source\libvpx\vp8\common\rtcd.c" />
+    <ClCompile Include="source\libvpx\vp8\common\sad_c.c" />
+    <ClCompile Include="source\libvpx\vp8\common\setupintrarecon.c" />
+    <ClCompile Include="source\libvpx\vp8\common\swapyv12buffer.c" />
+    <ClCompile Include="source\libvpx\vp8\common\textblit.c" />
+    <ClCompile Include="source\libvpx\vp8\common\treecoder.c" />
+    <ClCompile Include="source\libvpx\vp8\common\variance_c.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\filter_x86.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\idct_blk_mmx.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\idct_blk_sse2.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\loopfilter_x86.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\postproc_x86.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\recon_wrapper_sse2.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\variance_mmx.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\variance_sse2.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\variance_ssse3.c" />
+    <ClCompile Include="source\libvpx\vp8\common\x86\vp8_asm_stubs.c" />
+    <ClCompile Include="source\libvpx\vp8\decoder\dboolhuff.c" />
+    <ClCompile Include="source\libvpx\vp8\decoder\decodeframe.c" />
+    <ClCompile Include="source\libvpx\vp8\decoder\decodemv.c" />
+    <ClCompile Include="source\libvpx\vp8\decoder\detokenize.c" />
+    <ClCompile Include="source\libvpx\vp8\decoder\onyxd_if.c" />
+    <ClCompile Include="source\libvpx\vp8\decoder\threading.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\bitstream.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\boolhuff.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\dct.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\denoising.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\encodeframe.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\encodeintra.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\encodemb.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\encodemv.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\ethreading.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\firstpass.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\lookahead.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\mcomp.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\modecosts.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\mr_dissim.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\onyx_if.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\pickinter.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\picklpf.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\quantize.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\ratectrl.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\rdopt.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\segmentation.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\ssim.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\temporal_filter.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\tokenize.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\treewriter.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\vp8_asm_enc_offsets.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\denoising_sse2.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\quantize_sse2.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\vp8_enc_stubs_mmx.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\x86\vp8_enc_stubs_sse2.c" />
+    <ClCompile Include="source\libvpx\vp8\vp8_cx_iface.c" />
+    <ClCompile Include="source\libvpx\vp8\vp8_dx_iface.c" />
+    <ClCompile Include="source\libvpx\vpx\src\svc_encodeframe.c" />
+    <ClCompile Include="source\libvpx\vpx\src\vpx_codec.c" />
+    <ClCompile Include="source\libvpx\vpx\src\vpx_decoder.c" />
+    <ClCompile Include="source\libvpx\vpx\src\vpx_encoder.c" />
+    <ClCompile Include="source\libvpx\vpx\src\vpx_image.c" />
+    <ClCompile Include="source\libvpx\vpx\src\vpx_psnr.c" />
+    <ClCompile Include="source\libvpx\vpx_mem\vpx_mem.c" />
+    <ClCompile Include="source\libvpx\vpx_mem\vpx_mem_tracker.c" />
+    <ClCompile Include="source\libvpx\vpx_ports\arm_cpudetect.c" />
+    <ClCompile Include="source\libvpx\vpx_scale\generic\gen_scalers.c" />
+    <ClCompile Include="source\libvpx\vpx_scale\generic\vpx_scale.c" />
+    <ClCompile Include="source\libvpx\vpx_scale\generic\yv12config.c" />
+    <ClCompile Include="source\libvpx\vpx_scale\generic\yv12extend.c" />
+    <ClCompile Include="source\libvpx\vpx_scale\vpx_scale_asm_offsets.c" />
+    <ClCompile Include="source\libvpx\vpx_scale\vpx_scale_rtcd.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\libvpx\vp8\common\alloccommon.h" />
+    <ClInclude Include="source\libvpx\vp8\common\blockd.h" />
+    <ClInclude Include="source\libvpx\vp8\common\coefupdateprobs.h" />
+    <ClInclude Include="source\libvpx\vp8\common\common.h" />
+    <ClInclude Include="source\libvpx\vp8\common\default_coef_probs.h" />
+    <ClInclude Include="source\libvpx\vp8\common\entropy.h" />
+    <ClInclude Include="source\libvpx\vp8\common\entropymode.h" />
+    <ClInclude Include="source\libvpx\vp8\common\entropymv.h" />
+    <ClInclude Include="source\libvpx\vp8\common\extend.h" />
+    <ClInclude Include="source\libvpx\vp8\common\filter.h" />
+    <ClInclude Include="source\libvpx\vp8\common\findnearmv.h" />
+    <ClInclude Include="source\libvpx\vp8\common\header.h" />
+    <ClInclude Include="source\libvpx\vp8\common\invtrans.h" />
+    <ClInclude Include="source\libvpx\vp8\common\loopfilter.h" />
+    <ClInclude Include="source\libvpx\vp8\common\modecont.h" />
+    <ClInclude Include="source\libvpx\vp8\common\mv.h" />
+    <ClInclude Include="source\libvpx\vp8\common\onyx.h" />
+    <ClInclude Include="source\libvpx\vp8\common\onyxc_int.h" />
+    <ClInclude Include="source\libvpx\vp8\common\onyxd.h" />
+    <ClInclude Include="source\libvpx\vp8\common\postproc.h" />
+    <ClInclude Include="source\libvpx\vp8\common\ppflags.h" />
+    <ClInclude Include="source\libvpx\vp8\common\pragmas.h" />
+    <ClInclude Include="source\libvpx\vp8\common\quant_common.h" />
+    <ClInclude Include="source\libvpx\vp8\common\reconinter.h" />
+    <ClInclude Include="source\libvpx\vp8\common\reconintra4x4.h" />
+    <ClInclude Include="source\libvpx\vp8\common\setupintrarecon.h" />
+    <ClInclude Include="source\libvpx\vp8\common\swapyv12buffer.h" />
+    <ClInclude Include="source\libvpx\vp8\common\systemdependent.h" />
+    <ClInclude Include="source\libvpx\vp8\common\threading.h" />
+    <ClInclude Include="source\libvpx\vp8\common\treecoder.h" />
+    <ClInclude Include="source\libvpx\vp8\common\variance.h" />
+    <ClInclude Include="source\libvpx\vp8\common\vp8_entropymodedata.h" />
+    <ClInclude Include="source\libvpx\vp8\common\x86\filter_x86.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\dboolhuff.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\decodemv.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\decoderthreading.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\detokenize.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\ec_types.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\onyxd_int.h" />
+    <ClInclude Include="source\libvpx\vp8\decoder\treereader.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\bitstream.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\block.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\boolhuff.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\dct_value_cost.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\dct_value_tokens.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\defaultcoefcounts.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\denoising.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\encodeframe.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\encodeintra.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\encodemb.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\encodemv.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\firstpass.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\lookahead.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\mcomp.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\modecosts.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\mr_dissim.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\onyx_int.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\pickinter.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\quantize.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\ratectrl.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\rdopt.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\segmentation.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\tokenize.h" />
+    <ClInclude Include="source\libvpx\vp8\encoder\treewriter.h" />
+    <ClInclude Include="source\libvpx\vpx\internal\vpx_codec_internal.h" />
+    <ClInclude Include="source\libvpx\vpx\internal\vpx_psnr.h" />
+    <ClInclude Include="source\libvpx\vpx\svc_context.h" />
+    <ClInclude Include="source\libvpx\vpx\vp8.h" />
+    <ClInclude Include="source\libvpx\vpx\vp8cx.h" />
+    <ClInclude Include="source\libvpx\vpx\vp8dx.h" />
+    <ClInclude Include="source\libvpx\vpx\vpx_codec.h" />
+    <ClInclude Include="source\libvpx\vpx\vpx_decoder.h" />
+    <ClInclude Include="source\libvpx\vpx\vpx_encoder.h" />
+    <ClInclude Include="source\libvpx\vpx\vpx_frame_buffer.h" />
+    <ClInclude Include="source\libvpx\vpx\vpx_image.h" />
+    <ClInclude Include="source\libvpx\vpx\vpx_integer.h" />
+    <ClInclude Include="source\libvpx\vpx_mem\include\vpx_mem_intrnl.h" />
+    <ClInclude Include="source\libvpx\vpx_mem\include\vpx_mem_tracker.h" />
+    <ClInclude Include="source\libvpx\vpx_mem\vpx_mem.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\arm.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\asm_offsets.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\config.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\emmintrin_compat.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\mem.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\mem_ops.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\mem_ops_aligned.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\vpx_once.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\vpx_timer.h" />
+    <ClInclude Include="source\libvpx\vpx_ports\x86.h" />
+    <ClInclude Include="source\libvpx\vpx_scale\vpx_scale.h" />
+    <ClInclude Include="source\libvpx\vpx_scale\yv12config.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0D1601E2-AF09-4A88-8D92-DFFE41018C71}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libvpx_2013</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(ProgramFiles)\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\vsyasm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>libvpx</TargetName>
+    <OutDir>$(SolutionDir)$(PlatformName)\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>libvpx</TargetName>
+    <OutDir>$(SolutionDir)$(PlatformName)\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WIN32;WIN32;DEBUG;_LIB;RTCD_C;V8_DEPRECATION_WARNINGS;BLINK_SCALE_FILTERS_AT_RECORD_TIME;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_HAS_EXCEPTIONS=0;_SECURE_ATL;CHROMIUM_BUILD;TOOLKIT_VIEWS=1;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;CLD_VERSION=2;ENABLE_FULL_PRINTING=1;ENABLE_PRINTING=1;WIN_PDF_METAFILE_FOR_PRINTING=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\third_party\wtl\include;source\config\win\ia32;source\config;source\libvpx;source\libvpx\vp8\common;source\libvpx\vp8\decoder;source\libvpx\vp8\encoder;"$(OutDir)obj\global_intermediate\third_party\libvpx"</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WIN32;WIN32;_LIB;RTCD_C;V8_DEPRECATION_WARNINGS;BLINK_SCALE_FILTERS_AT_RECORD_TIME;NOMINMAX;PSAPI_VERSION=1;_CRT_RAND_S;CERT_CHAIN_PARA_HAS_EXTRA_FIELDS;WIN32_LEAN_AND_MEAN;_ATL_NO_OPENGL;_HAS_EXCEPTIONS=0;_SECURE_ATL;CHROMIUM_BUILD;TOOLKIT_VIEWS=1;USE_AURA=1;USE_ASH=1;USE_DEFAULT_RENDER_THEME=1;USE_LIBJPEG_TURBO=1;ENABLE_ONE_CLICK_SIGNIN;ENABLE_REMOTING=1;ENABLE_WEBRTC=1;ENABLE_PEPPER_CDMS;ENABLE_CONFIGURATION_POLICY;ENABLE_NOTIFICATIONS;ENABLE_HIDPI=1;ENABLE_EGLIMAGE=1;__STD_C;_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE;NTDDI_VERSION=0x06020000;_USING_V110_SDK71_;ENABLE_TASK_MANAGER=1;ENABLE_EXTENSIONS=1;ENABLE_PLUGIN_INSTALLATION=1;ENABLE_PLUGINS=1;ENABLE_SESSION_SERVICE=1;ENABLE_THEMES=1;ENABLE_AUTOFILL_DIALOG=1;ENABLE_BACKGROUND=1;ENABLE_GOOGLE_NOW=1;CLD_VERSION=2;ENABLE_FULL_PRINTING=1;ENABLE_PRINTING=1;WIN_PDF_METAFILE_FOR_PRINTING=1;ENABLE_SPELLCHECK=1;ENABLE_CAPTIVE_PORTAL_DETECTION=1;ENABLE_APP_LIST=1;ENABLE_SETTINGS_APP=1;ENABLE_MANAGED_USERS=1;ENABLE_MDNS=1;ENABLE_SERVICE_DISCOVERY=1;ENABLE_WIFI_BOOTSTRAPPING=1;_CRT_NONSTDC_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;DYNAMIC_ANNOTATIONS_ENABLED=1;WTF_USE_DYNAMIC_ANNOTATIONS=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\third_party\wtl\include;source\config\win\ia32;source\config;source\libvpx;source\libvpx\vp8\common;source\libvpx\vp8\decoder;source\libvpx\vp8\encoder;"$(OutDir)obj\global_intermediate\third_party\libvpx"</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(ProgramFiles)\MSBuild\Microsoft.Cpp\v4.0\BuildCustomizations\vsyasm.targets" />
+  </ImportGroup>
+</Project>

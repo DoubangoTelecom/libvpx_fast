@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libvpx", "libvpx.vcproj", "{7D82095D-4194-4A97-90A3-45039E3A5DAC}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test_fast", "test_fast\test_fast.vcproj", "{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7D82095D-4194-4A97-90A3-45039E3A5DAC} = {7D82095D-4194-4A97-90A3-45039E3A5DAC}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|GE vPC WEC7 SDK (x86) = Debug|GE vPC WEC7 SDK (x86)
@@ -13,7 +18,6 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Debug|GE vPC WEC7 SDK (x86).ActiveCfg = Debug|GE vPC WEC7 SDK (x86)
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Debug|GE vPC WEC7 SDK (x86).Build.0 = Debug|GE vPC WEC7 SDK (x86)
-		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Debug|GE vPC WEC7 SDK (x86).Deploy.0 = Debug|GE vPC WEC7 SDK (x86)
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Debug|Win32.ActiveCfg = Debug|Win32
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Debug|Win32.Build.0 = Debug|Win32
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Release|GE vPC WEC7 SDK (x86).ActiveCfg = Release|GE vPC WEC7 SDK (x86)
@@ -21,6 +25,14 @@ Global
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Release|GE vPC WEC7 SDK (x86).Deploy.0 = Release|GE vPC WEC7 SDK (x86)
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Release|Win32.ActiveCfg = Release|Win32
 		{7D82095D-4194-4A97-90A3-45039E3A5DAC}.Release|Win32.Build.0 = Release|Win32
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Debug|GE vPC WEC7 SDK (x86).ActiveCfg = Debug|GE vPC WEC7 SDK (x86)
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Debug|GE vPC WEC7 SDK (x86).Build.0 = Debug|GE vPC WEC7 SDK (x86)
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Debug|GE vPC WEC7 SDK (x86).Deploy.0 = Debug|GE vPC WEC7 SDK (x86)
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Debug|Win32.Build.0 = Debug|Win32
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Release|GE vPC WEC7 SDK (x86).ActiveCfg = Release|Win32
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Release|Win32.ActiveCfg = Release|Win32
+		{0B5EF5EF-31D6-494A-81BA-CA984B569B1D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
