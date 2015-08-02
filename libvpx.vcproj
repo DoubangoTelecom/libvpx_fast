@@ -575,6 +575,10 @@
 						>
 					</File>
 					<File
+						RelativePath=".\source\libvpx\vp8\common\sad_doubango.c"
+						>
+					</File>
+					<File
 						RelativePath=".\source\libvpx\vp8\common\setupintrarecon.c"
 						>
 					</File>
@@ -699,6 +703,10 @@
 						</File>
 						<File
 							RelativePath=".\source\libvpx\vp8\common\x86\postproc_x86.c"
+							>
+						</File>
+						<File
+							RelativePath=".\source\libvpx\vp8\common\x86\recon_doubango_x86.c"
 							>
 						</File>
 						<File

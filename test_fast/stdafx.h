@@ -8,7 +8,9 @@
 #include "targetver.h"
 
 #include <stdio.h>
+#if !defined(_WIN32_WCE)
 #include <tchar.h>
+#endif
 
 
 

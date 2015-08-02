@@ -9,7 +9,7 @@
 #include <vpx/vp8cx.h>
 #include <vpx/vp8dx.h>
 
-#define VPX_MD5_COMPARE			0
+#define VPX_MD5_COMPARE			1
 #define VPX_MD5_PRINT			0
 
 #define vp8_interface_enc (vpx_codec_vp8_cx())
