@@ -359,6 +359,9 @@
     <ClCompile Include="source\libvpx\vp8\vp8_dx_iface.c">
       <Filter>Source Files\vp8</Filter>
     </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\common\sad_doubango.c">
+      <Filter>Source Files\vp8\common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\libvpx\vp8\common\alloccommon.h">

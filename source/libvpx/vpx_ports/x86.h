@@ -153,9 +153,9 @@ x86_simd_caps(void) {
 
   if (reg_edx & BIT(23)) flags |= HAS_MMX;
 
-  if (reg_edx & BIT(25)) flags |= HAS_SSE; /* aka xmm */
+  if (reg_edx & BIT(25)) flags |= HAS_SSE; // aka xmm 
 
-  if (reg_edx & BIT(26)) flags |= HAS_SSE2; /* aka wmt */
+  if (reg_edx & BIT(26)) flags |= HAS_SSE2; // aka wmt 
 
   if (reg_ecx & BIT(0)) flags |= HAS_SSE3;
 

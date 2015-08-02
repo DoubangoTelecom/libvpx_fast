@@ -482,6 +482,9 @@ void vp8_rtcd(void);
 
 #ifdef RTCD_C
 #include "vpx_ports/x86.h"
+#if CONFIG_DOUBANGO
+#include "doubango_config.h"
+#endif
 static void setup_rtcd_internal(void)
 {
     int flags = x86_simd_caps();
@@ -728,6 +731,18 @@ static void setup_rtcd_internal(void)
     vp8_variance_halfpixvar16x16_v = vp8_variance_halfpixvar16x16_v_c;
     if (flags & HAS_MMX) vp8_variance_halfpixvar16x16_v = vp8_variance_halfpixvar16x16_v_mmx;
     if (flags & HAS_SSE2) vp8_variance_halfpixvar16x16_v = vp8_variance_halfpixvar16x16_v_wmt;
+
+
+#if CONFIG_DOUBANGO
+	unsigned int vp8_sad16x16_doubango_sse2(const unsigned char *src_ptr/*always aligned*/, int src_stride/*always aligned*/,
+		const unsigned char *ref_ptr, int ref_stride,
+		unsigned int max_sad);
+	void vp8_copy32xn_doubango_sse2(const unsigned char *src_ptr, int source_stride, const unsigned char *ref_ptr, int ref_stride, int n);
+
+
+	if (flags & HAS_SSE2) vp8_sad16x16 = vp8_sad16x16_doubango_sse2;
+	if (flags & HAS_SSE2) vp8_copy32xn = vp8_copy32xn_doubango_sse2;
+#endif
 }
 #endif
 

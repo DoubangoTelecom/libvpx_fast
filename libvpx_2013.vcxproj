@@ -302,6 +302,7 @@
     <ClCompile Include="source\libvpx\vp8\common\reconintra4x4.c" />
     <ClCompile Include="source\libvpx\vp8\common\rtcd.c" />
     <ClCompile Include="source\libvpx\vp8\common\sad_c.c" />
+    <ClCompile Include="source\libvpx\vp8\common\sad_doubango.c" />
     <ClCompile Include="source\libvpx\vp8\common\setupintrarecon.c" />
     <ClCompile Include="source\libvpx\vp8\common\swapyv12buffer.c" />
     <ClCompile Include="source\libvpx\vp8\common\textblit.c" />

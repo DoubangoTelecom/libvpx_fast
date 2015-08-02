@@ -268,12 +268,25 @@ void vp8_regular_quantize_b_c(BLOCK *b, BLOCKD *d)
 
 void vp8_quantize_mby_c(MACROBLOCK *x)
 {
-    int i;
     int has_2nd_order = (x->e_mbd.mode_info_context->mbmi.mode != B_PRED
         && x->e_mbd.mode_info_context->mbmi.mode != SPLITMV);
 
-    for (i = 0; i < 16; i++)
-        x->quantize_b(&x->block[i], &x->e_mbd.block[i]);
+	x->quantize_b(&x->block[0], &x->e_mbd.block[0]);
+	x->quantize_b(&x->block[1], &x->e_mbd.block[1]);
+	x->quantize_b(&x->block[2], &x->e_mbd.block[2]);
+	x->quantize_b(&x->block[3], &x->e_mbd.block[3]);
+	x->quantize_b(&x->block[4], &x->e_mbd.block[4]);
+	x->quantize_b(&x->block[5], &x->e_mbd.block[5]);
+	x->quantize_b(&x->block[6], &x->e_mbd.block[6]);
+	x->quantize_b(&x->block[7], &x->e_mbd.block[7]);
+	x->quantize_b(&x->block[8], &x->e_mbd.block[8]);
+	x->quantize_b(&x->block[9], &x->e_mbd.block[9]);
+	x->quantize_b(&x->block[10], &x->e_mbd.block[10]);
+	x->quantize_b(&x->block[11], &x->e_mbd.block[11]);
+	x->quantize_b(&x->block[12], &x->e_mbd.block[12]);
+	x->quantize_b(&x->block[13], &x->e_mbd.block[13]);
+	x->quantize_b(&x->block[14], &x->e_mbd.block[14]);
+	x->quantize_b(&x->block[15], &x->e_mbd.block[15]);
 
     if(has_2nd_order)
         x->quantize_b(&x->block[24], &x->e_mbd.block[24]);
