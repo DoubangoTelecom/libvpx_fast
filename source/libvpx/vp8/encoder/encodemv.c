@@ -115,11 +115,16 @@ static unsigned int cost_mvcomponent(const int v, const struct mv_context *mvc)
     {
         int i = 0;
         cost = vp8_cost_one(p [mvpis_short]);
-
+#if CONFIG_DOUBANGO
+		cost += vp8_cost_bit(p [MVPbits], x & 1);
+		cost += vp8_cost_bit(p [MVPbits + 1], (x >> 1) & 1);
+		cost += vp8_cost_bit(p [MVPbits + 2], (x >> 2) & 1);
+#else
         do
             cost += vp8_cost_bit(p [MVPbits + i], (x >> i) & 1);
 
         while (++i < 3);
+#endif
 
         i = mvlong_width - 1;  /* Skip bit 3, which is sometimes implicit */
 

@@ -268,9 +268,12 @@ void vp8_regular_quantize_b_c(BLOCK *b, BLOCKD *d)
 
 void vp8_quantize_mby_c(MACROBLOCK *x)
 {
+#if !CONFIG_DOUBANGO
+	int i;
+#endif
     int has_2nd_order = (x->e_mbd.mode_info_context->mbmi.mode != B_PRED
         && x->e_mbd.mode_info_context->mbmi.mode != SPLITMV);
-
+#if CONFIG_DOUBANGO
 	x->quantize_b(&x->block[0], &x->e_mbd.block[0]);
 	x->quantize_b(&x->block[1], &x->e_mbd.block[1]);
 	x->quantize_b(&x->block[2], &x->e_mbd.block[2]);
@@ -287,6 +290,10 @@ void vp8_quantize_mby_c(MACROBLOCK *x)
 	x->quantize_b(&x->block[13], &x->e_mbd.block[13]);
 	x->quantize_b(&x->block[14], &x->e_mbd.block[14]);
 	x->quantize_b(&x->block[15], &x->e_mbd.block[15]);
+#else
+	for (i = 0; i < 16; i++)
+		x->quantize_b(&x->block[i], &x->e_mbd.block[i]);
+#endif
 
     if(has_2nd_order)
         x->quantize_b(&x->block[24], &x->e_mbd.block[24]);
@@ -305,10 +312,20 @@ void vp8_quantize_mb_c(MACROBLOCK *x)
 
 void vp8_quantize_mbuv_c(MACROBLOCK *x)
 {
-    int i;
-
+#if CONFIG_DOUBANGO
+	x->quantize_b(&x->block[16], &x->e_mbd.block[16]);
+	x->quantize_b(&x->block[17], &x->e_mbd.block[17]);
+	x->quantize_b(&x->block[18], &x->e_mbd.block[18]);
+	x->quantize_b(&x->block[19], &x->e_mbd.block[19]);
+	x->quantize_b(&x->block[20], &x->e_mbd.block[20]);
+	x->quantize_b(&x->block[21], &x->e_mbd.block[21]);
+	x->quantize_b(&x->block[22], &x->e_mbd.block[22]);
+	x->quantize_b(&x->block[23], &x->e_mbd.block[23]);
+#else
+	int i;
     for (i = 16; i < 24; i++)
         x->quantize_b(&x->block[i], &x->e_mbd.block[i]);
+#endif
 }
 
 /* quantize_b_pair function pointer in MACROBLOCK structure is set to one of

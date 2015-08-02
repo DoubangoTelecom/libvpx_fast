@@ -129,21 +129,28 @@ void vp8_transform_mbuv(MACROBLOCK *x)
 
 void vp8_transform_intra_mby(MACROBLOCK *x)
 {
-    int i;
-
+#if CONFIG_DOUBANGO
+	x->short_fdct8x4(&x->block[0].src_diff[0], &x->block[0].coeff[0], 32);
+	x->short_fdct8x4(&x->block[2].src_diff[0], &x->block[2].coeff[0], 32);
+	x->short_fdct8x4(&x->block[4].src_diff[0], &x->block[4].coeff[0], 32);
+	x->short_fdct8x4(&x->block[6].src_diff[0], &x->block[6].coeff[0], 32);
+	x->short_fdct8x4(&x->block[8].src_diff[0], &x->block[8].coeff[0], 32);
+	x->short_fdct8x4(&x->block[10].src_diff[0], &x->block[10].coeff[0], 32);
+	x->short_fdct8x4(&x->block[12].src_diff[0], &x->block[12].coeff[0], 32);
+	x->short_fdct8x4(&x->block[14].src_diff[0], &x->block[14].coeff[0], 32);
+#else
+	int i;
     for (i = 0; i < 16; i += 2)
     {
-        x->short_fdct8x4(&x->block[i].src_diff[0],
-            &x->block[i].coeff[0], 32);
+        x->short_fdct8x4(&x->block[i].src_diff[0], &x->block[i].coeff[0], 32);
     }
+#endif
 
     /* build dc block from 16 y dc values */
     build_dcblock(x);
 
     /* do 2nd order transform on the dc block */
-    x->short_walsh4x4(&x->block[24].src_diff[0],
-        &x->block[24].coeff[0], 8);
-
+    x->short_walsh4x4(&x->block[24].src_diff[0], &x->block[24].coeff[0], 8);
 }
 
 
