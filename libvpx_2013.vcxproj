@@ -332,6 +332,7 @@
     <ClCompile Include="source\libvpx\vp8\encoder\encodeframe.c" />
     <ClCompile Include="source\libvpx\vp8\encoder\encodeintra.c" />
     <ClCompile Include="source\libvpx\vp8\encoder\encodemb.c" />
+    <ClCompile Include="source\libvpx\vp8\encoder\encodemb_doubango.c" />
     <ClCompile Include="source\libvpx\vp8\encoder\encodemv.c" />
     <ClCompile Include="source\libvpx\vp8\encoder\ethreading.c" />
     <ClCompile Include="source\libvpx\vp8\encoder\firstpass.c" />

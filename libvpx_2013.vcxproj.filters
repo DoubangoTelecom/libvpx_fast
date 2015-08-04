@@ -365,6 +365,9 @@
     <ClCompile Include="source\libvpx\vp8\common\x86\recon_doubango_x86.c">
       <Filter>Source Files\vp8\common\x86</Filter>
     </ClCompile>
+    <ClCompile Include="source\libvpx\vp8\encoder\encodemb_doubango.c">
+      <Filter>Source Files\vp8\encoder</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="source\libvpx\vp8\common\alloccommon.h">

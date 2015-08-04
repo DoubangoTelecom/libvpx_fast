@@ -488,6 +488,7 @@ void vp8_rtcd(void);
 unsigned int vp8_sad16x16_doubango_sse2(const unsigned char *src_ptr/*always aligned*/, int src_stride/*always aligned*/, const unsigned char *ref_ptr, int ref_stride, unsigned int max_sad);
 void vp8_copy32xn_doubango_sse2(const unsigned char *src_ptr, int source_stride, const unsigned char *ref_ptr, int ref_stride, int n);
 void vp8_copy_mem16x16_doubango_sse2(unsigned char *src, int src_stride, unsigned char *dst, int dst_stride);
+void vp8_subtract_mby_doubango_sse2(short *diff, unsigned char *src, int src_stride, unsigned char *pred, int pred_stride);
 #endif
 
 
@@ -741,8 +742,9 @@ static void setup_rtcd_internal(void)
 
 #if CONFIG_DOUBANGO
 	if (flags & HAS_SSE2) vp8_sad16x16 = vp8_sad16x16_doubango_sse2;
-	if (flags & HAS_SSE2) vp8_copy32xn = vp8_copy32xn_doubango_sse2;
+	if (flags & HAS_SSE2) vp8_copy32xn = vp8_copy32xn_doubango_sse2; // not faster -> write ASM version
 	if (flags & HAS_SSE2) vp8_copy_mem16x16 = vp8_copy_mem16x16_doubango_sse2;
+	if (flags & HAS_SSE2) vp8_subtract_mby = vp8_subtract_mby_doubango_sse2;
 #endif
 }
 #endif

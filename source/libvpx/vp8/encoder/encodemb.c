@@ -107,12 +107,31 @@ static void vp8_subtract_mb(MACROBLOCK *x)
 static void build_dcblock(MACROBLOCK *x)
 {
     short *src_diff_ptr = &x->src_diff[384];
-    int i;
-
+    
+#if CONFIG_DOUBANGO
+	src_diff_ptr[0] = x->coeff[0];
+	src_diff_ptr[1] = x->coeff[16];
+	src_diff_ptr[2] = x->coeff[32];
+	src_diff_ptr[3] = x->coeff[48];
+	src_diff_ptr[4] = x->coeff[64];
+	src_diff_ptr[5] = x->coeff[80];
+	src_diff_ptr[6] = x->coeff[96];
+	src_diff_ptr[7] = x->coeff[112];
+	src_diff_ptr[8] = x->coeff[128];
+	src_diff_ptr[9] = x->coeff[144];
+	src_diff_ptr[10] = x->coeff[160];
+	src_diff_ptr[11] = x->coeff[176];
+	src_diff_ptr[12] = x->coeff[192];
+	src_diff_ptr[13] = x->coeff[208];
+	src_diff_ptr[14] = x->coeff[224];
+	src_diff_ptr[15] = x->coeff[240];
+#else
+	int i;
     for (i = 0; i < 16; i++)
     {
         src_diff_ptr[i] = x->coeff[i * 16];
     }
+#endif
 }
 
 void vp8_transform_mbuv(MACROBLOCK *x)
@@ -160,8 +179,7 @@ static void transform_mb(MACROBLOCK *x)
 
     for (i = 0; i < 16; i += 2)
     {
-        x->short_fdct8x4(&x->block[i].src_diff[0],
-            &x->block[i].coeff[0], 32);
+        x->short_fdct8x4(&x->block[i].src_diff[0],  &x->block[i].coeff[0], 32);
     }
 
     /* build dc block from 16 y dc values */
@@ -170,8 +188,7 @@ static void transform_mb(MACROBLOCK *x)
 
     for (i = 16; i < 24; i += 2)
     {
-        x->short_fdct8x4(&x->block[i].src_diff[0],
-            &x->block[i].coeff[0], 16);
+        x->short_fdct8x4(&x->block[i].src_diff[0],  &x->block[i].coeff[0], 16);
     }
 
     /* do 2nd order transform on the dc block */
@@ -188,8 +205,7 @@ static void transform_mby(MACROBLOCK *x)
 
     for (i = 0; i < 16; i += 2)
     {
-        x->short_fdct8x4(&x->block[i].src_diff[0],
-            &x->block[i].coeff[0], 32);
+        x->short_fdct8x4(&x->block[i].src_diff[0], &x->block[i].coeff[0], 32);
     }
 
     /* build dc block from 16 y dc values */

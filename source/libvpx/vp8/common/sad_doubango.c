@@ -9,6 +9,7 @@
 #include <emmintrin.h> /* SSE2 */
 
 // SSE3 version from Goggle doesn't check for "max_sad" to break and always consider that "ref_ptr" is unaligned
+// TODO: add ASM version
 unsigned int vp8_sad16x16_doubango_sse2(const unsigned char *src_ptr/*always aligned*/, int src_stride/*always aligned*/,
 	const unsigned char *ref_ptr, int ref_stride,
 	unsigned int max_sad)
@@ -45,33 +46,12 @@ unsigned int vp8_sad16x16_doubango_sse2(const unsigned char *src_ptr/*always ali
 }
 
 // SSE3 version from Goggle doesn't check for alignment
+// TODO: add ASM version
 void vp8_copy32xn_doubango_sse2(const unsigned char *src_ptr, int src_stride,
 	const unsigned char *dst_ptr, int dst_stride,
 	int height)
 {
 	register int r;
-#if 0
-	void(*store_to_dst)(__m128i *_P, __m128i _B);
-	__m128i (*load_from_src)(__m128i const*_P);
-	if (DOUBANGO_IS_ALIGNED(dst_ptr, 16) && DOUBANGO_IS_ALIGNED(dst_stride, 16)) { // "dst_ptr"/"dst_stride" -> higher prob to be aligned
-		if (DOUBANGO_IS_ALIGNED(src_ptr, 16) && DOUBANGO_IS_ALIGNED(src_stride, 16)) {
-			store_to_dst = _mm_store_si128;
-			load_from_src = _mm_load_si128;
-		}
-		else {
-			store_to_dst = _mm_store_si128;
-			load_from_src = _mm_loadu_si128;
-		}
-	}
-	else {
-		store_to_dst = _mm_storeu_si128;
-		load_from_src = _mm_loadu_si128;
-	}
-	for (r = 0; r < height; r++) {
-		store_to_dst((__m128i*)dst_ptr, load_from_src((__m128i*)src_ptr)); store_to_dst((__m128i*)&dst_ptr[16], load_from_src((__m128i*)&src_ptr[16]));
-		src_ptr += src_stride; dst_ptr += dst_stride;
-	}
-#else
 	if (DOUBANGO_IS_ALIGNED(dst_ptr, 16) && DOUBANGO_IS_ALIGNED(dst_stride, 16)) { // "dst_ptr"/"dst_stride" -> higher prob to be aligned
 		if (DOUBANGO_IS_ALIGNED(src_ptr, 16) && DOUBANGO_IS_ALIGNED(src_stride, 16)) {
 			for (r = 0; r < height; r++) {
@@ -89,9 +69,6 @@ void vp8_copy32xn_doubango_sse2(const unsigned char *src_ptr, int src_stride,
 			_mm_storeu_si128((__m128i*)dst_ptr, _mm_loadu_si128((__m128i*)src_ptr)); _mm_storeu_si128((__m128i*)&dst_ptr[16], _mm_loadu_si128((__m128i*)&src_ptr[16])); src_ptr += src_stride; dst_ptr += dst_stride;
 		}
 	}
-#endif
 }
-
-
 
 #endif /* CONFIG_DOUBANGO */
